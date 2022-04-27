@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      h1{
+          color: white;
+          position: relative;
+          display: inline-block;
+      }
+
+      h1::before{
+          content: 'web developer';
+          color: brown;
+          /* width: 100%; */
+          white-space: nowrap;
+          overflow: hidden;
+          position: absolute;
+          animation: load,load1 4s linear infinite;
+      }
+
+      @keyframes load {
+          0%{
+              width: 0%;
+          }
+
+          100%{
+              width: 100%;
+              
+          }
+      }
+
+
+      @keyframes load1 {
+          0%{
+            animation-delay: 5s;
+              width: 0%;
+          }
+
+          100%{
+            animation-delay: 5s;
+            content: 'Mobile Developer';
+              width: 100%;
+          }
+      }
+
+    </style>
+</head>
+<body>
+    <span>I am Meet Soni </span>
+    <h1>Web developer</h1>
+</body>
+</html>
